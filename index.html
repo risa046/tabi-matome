@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>旅まとめ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <main class="home">
+    <header class="hero">
+      <h1 class="logo">旅まとめ</h1>
+      <p class="catch">みんなの旅をもっと簡単に♪</p>
+    </header>
+
+    <section class="panel">
+      <h2>あなたの名前</h2>
+      <input id="display-name" type="text" maxlength="20" placeholder="例: すぎもと">
+    </section>
+
+    <!-- H-1 新しい旅をつくる -->
+    <section class="panel">
+      <h2>新しい旅をつくる</h2>
+      <form id="create-form" class="row">
+        <input id="trip-name" type="text" maxlength="30" placeholder="旅の名前（例: 東京旅行）" required>
+        <button type="submit" class="btn btn-primary">つくる</button>
+      </form>
+    </section>
+
+    <!-- H-3 招待コードで参加する -->
+    <section class="panel">
+      <h2>招待コードで参加する</h2>
+      <form id="join-form" class="row">
+        <input id="invite-code" type="text" maxlength="6" placeholder="6文字のコード" autocapitalize="characters" required>
+        <button type="submit" class="btn btn-accent">参加する</button>
+      </form>
+    </section>
+
+    <!-- H-4 これまでの旅行 -->
+    <section class="past">
+      <h2>これまでの旅行</h2>
+      <ul id="trip-list" class="trip-list"></ul>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
