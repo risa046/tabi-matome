@@ -1,0 +1,30 @@
+.home { max-width: 480px; margin: 0 auto; padding: 40px 20px 48px; }
+.hero { text-align: center; margin-bottom: 32px; }
+.logo { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: 0.08em; color: var(--primary); }
+.catch { margin: 4px 0 0; color: var(--sub); font-weight: 500; }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.row { display: flex; gap: 8px; }
+
+.past { margin-top: 32px; }
+.trip-list { list-style: none; margin: 0; padding: 0; }
+.trip-list li + li { margin-top: 8px; }
+.trip-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.trip-list .date { color: var(--sub); font-size: 0.875rem; }
+.empty { color: var(--sub); text-align: center; padding: 16px 0; }
